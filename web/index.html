@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>abissinya Restaurant</title>
+      <link rel="stylesheet" href="./style/style.css" />
+ 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <script>
+    function hide(){
+        document.getElementById("nav").style.display = "none";
+        document.getElementById("open").style.display = "block";
+    }
+    function dis(){
+        document.getElementById("nav").style.display = "block";
+        document.getElementById("open").style.display = "none";
+    }
+</script>
+
+  <body>
+    <!-- Start Of the home page -->
+    
+    <div id="home">
+      <header>
+        <div class="logo">
+          <h1>አቢሲኒያ <span class="secndtxt">Resturant</span></h1>
+        </div>
+        <li><i class="fa fa-burger" id="open" onclick="dis()"></i></li>
+        <nav id="nav">
+            
+            
+          <ul>
+            <li><i class="fa fa-close" id="close" onclick="hide()"></i></li>
+            
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ab">About</a></li>
+          <li><a href="#or">Order</a></li>
+            
+            
+            <li><a href="#cont">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="front_pg">
+        <p>Order <span>&</span> Enjoy!</p>
+        <a href="#order" class="btn-order">Order Now</a>
+      </div>
+    </div>
+    <!-- End of the home page-->
+
+    <main>
+      <!-- Start of the about page-->
+      <div id="about">
+        <h2 id="ab">About</h2>
+        <div class="text_side">
+          <p>
+            They had always called it the green river. It made sense. The river
+            was green. The river likely had a different official name, but to
+            everyone in town, it was and had always been the green river. So it
+            was with great surprise that on this day the green river was a
+            fluorescent pink. The red glint of paint sparkled under the sun. He
+            had dreamed of owning this car since he was ten, and that dream had
+            become a reality less than a year ago. It was his baby and he spent
+            hours caring for it, pampering it, and fondling over it. She knew
+            this all too well, and that's exactly why she had taken a sludge
+            hammer to it. The box sat on the desk next to the computer. It had
+            arrived earlier in the day and business had interrupted her opening
+            it earlier. She didn't who had sent it and briefly wondered who it
+            might have been. As she began to unwrap it, she had no idea that
+            opening it would completely change her life. At that moment, she
+            realized that she had created her current life. It wasn't the life
+            she wanted, but she took responsibility for how it currently stood.
+            Something clicked and she saw that every choice she made to this
+            point in her life had led to where her life stood at this very
+            moment even if she knew this wasn't where she wanted to be. She
+            determined to choose to change it. There wasn't a whole lot he could
+            do at that moment.
+          </p>
+        </div>
+        <div class="image-side">
+          <img src="./images/piz.jpg" alt="Pizza Photo" class="abt-img" />
+        </div>
+      </div>
+      <!-- End of the about page -->
+      <a href="#home" class="btt"><i class="fa fa-arrow-alt-circle-up"></i></a>
+      <!-- Start of the order page-->
+      <div id="order">
+        <h2 id="or">Order...</h2>
+        <div class="tcol-list">
+          <div class="order-list">
+            <img src="./images/Dorowet.jpg" alt="Dorowet" />
+            <h3>ዶሮ ወጥ / Doro Wet</h3>
+            <p class="detail">
+              Skinless chicken legs, Clarified butter, boiled eggs, teff flour,
+              Ethiopian Spiced.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list">
+            <img src="./images/kitfo.jpg" alt="kitfo" />
+            <h3>ክትፎ / Kitfo</h3>
+            <p class="detail">
+              Top round beef, cayenne pepper, Clarified butter, garlic,
+              Ethiopian Spiced.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list">
+            <img src="./images/tibs.jpg" alt="tibs" />
+            <h3>ጥብስ / Tibs</h3>
+            <p class="detail">
+              Beef, Hybrid stir fry, stew, bread or injera, Clarified butter,
+              Ethiopian Spiced.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list nd">
+            <img src="./images/ham.jpg" alt="Hamburger" />
+            <h3>Hamburger</h3>
+            <p class="detail">
+              Saltine crackers, worcestershire sauce, ground chuck, milk, egg,
+              corn syrup.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list nd">
+            <img src="./images/piz.jpg" alt="Pizza" />
+            <h3>Pizza</h3>
+            <p class="detail">
+              Ricotta cheese, tomato sauce, fresh basil pesto, cornmeal, redstar
+              platinum.
+            </p>
+            <p class="price">$100</p>
+          </div>
+
+          <div class="order-list nd">
+            <img src="./images/shwar.jpg" alt="Shawarma" />
+            <h3>Shawarma</h3>
+            <p class="detail">
+              Pita bread, chicken thigh fillets, smoked paprika, lettuce, red
+              pepper flakes, olive oil.
+            </p>
+            <p class="price">$100</p>
+          </div>
+        </div>
+        <center><a href="Order.html" class="or-btn">Order Now</a></center>
+      </div>
+
+      <!-- End of the order page-->
+
+      
+  <div class="ord-form">
+    <form action="#">
+      <input name="name" type="text" placeholder="Name" required class="inp"/>
+      <input name="email" type="email" placeholder="E-Mail" required class="inp"/>
+      <input name="ph_no" type="text" placeholder="Phone Number" required class="inp" id="pn"/>
+      <input name="Address" type="text" placeholder="Address" required class="inp"/>
+      <select name="food" id="fd" class="inp">
+          <option value="top">Select Your Food</option>
+          <option value="doro">ዶሮ ወጥ</option>
+          <option value="kitfo">ክትፎ</option>
+          <option value="tibs">ጥብስ</option>
+          <option value="humb">Hamburger</option>
+          <option value="pizza">Pizza</option>
+          <option value="shawa">Shawarma</option>     
+      </select>
+      <input name="itm_num" type="number" placeholder="Number of Item" required class="inp" id="it"min="0"/>
+      
+      <input name="totpr" type="number" placeholder="Total Price" required class="inp" readonly id="tt"/>
+      <input type="button" value="Calculate Price" class="inp cal" onclick="calc()">
+      <input type="submit" value="SEND" class="inp sen" onclick="valid()" >
+    </form>
+  </div>
+      
+
+      <!-- Start of contact-->
+      <div id="contact">
+        <h2 id="cont">Contact</h2>
+          <form action="#">
+            <input name="name" type="text" placeholder="Name" required />
+            <input name="name" type="email" placeholder="e-mail" required />
+            <textarea
+              name="comment"
+              cols="30"
+              rows="5"
+              placeholder="Comment"
+            ></textarea>
+            <input type="submit" value="Send" class="btn-send" />
+          </form>
+      </div>
+
+      <!-- End of Contact of page -->
+    </main>
+
+    <footer class="footer">
+      <div class="col col-1">
+        <h4 class="h4b4">On Social Medias</h4>
+        <ul>
+          <li>
+            <a href="http://www.facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i>&nbsp;facebook</a
+            >
+          </li>
+          <li>
+            <a href="http://www.twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i>&nbsp;twitter</a
+            >
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i>&nbsp;instagram</a
+            >
+          </li>
+          <li>
+            <a href="http://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i>&nbsp;youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col col-2">
+        <ul>
+          <h4>Navigation</h4>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#ab">About</a></li>
+          <li><a href="#or">Order</a></li>
+          <li><a href="#gal">Gallery</a></li>
+        
+          <li><a href="#cont">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col col-3">
+        <h4>Address</h4>
+        <ul>
+          <li><i class="fa fa-phone"></i> &nbsp;+251 913456543</li>
+          <li><i class="fa fa-envelope-open"></i> &nbsp;samicafe@gmail.com</li>
+          <li><i class="fa fa-globe"></i> &nbsp;www.samicafe.com</li>
+          <li><i class="fa fa-map-marker"></i> &nbsp;A.A, Ethiopia</li>
+        </ul>
+      </div>
+    </footer>
+    
+  </body>
+</html>
+
+
