@@ -23,24 +23,20 @@
 
   <body>
     <!-- Start Of the home page -->
-    
+    <header>
     <div id="home">
-      <header>
         <div class="logo">
           <h1>አቢሲኒያ <span class="secndtxt">Resturant</span></h1>
         </div>
         <li><i class="fa fa-burger" id="open" onclick="dis()"></i></li>
         <nav id="nav">
-            
-            
           <ul>
             <li><i class="fa fa-close" id="close" onclick="hide()"></i></li>
             
             <li><a href="#home">Home</a></li>
             <li><a href="#ab">About</a></li>
-          <li><a href="#or">Order</a></li>
-            
-            
+            <li><a href="#or">Order</a></li>
+            <li><a href="#">Reservation</a></li>
             <li><a href="#cont">Contact</a></li>
           </ul>
         </nav>
@@ -82,77 +78,29 @@
           </p>
         </div>
         <div class="image-side">
-          <img src="./images/piz.jpg" alt="Pizza Photo" class="abt-img" />
+          <img src="./images/kitfo.jpg" alt="Pizza Photo" class="abt-img" />
         </div>
       </div>
       <!-- End of the about page -->
       <a href="#home" class="btt"><i class="fa fa-arrow-alt-circle-up"></i></a>
+
       <!-- Start of the order page-->
-      <div id="order">
-        <h2 id="or">Order...</h2>
-        <div class="tcol-list">
-          <div class="order-list">
-            <img src="./images/Dorowet.jpg" alt="Dorowet" />
-            <h3>ዶሮ ወጥ / Doro Wet</h3>
-            <p class="detail">
-              Skinless chicken legs, Clarified butter, boiled eggs, teff flour,
-              Ethiopian Spiced.
-            </p>
-            <p class="price">$100</p>
-          </div>
-
-          <div class="order-list">
-            <img src="./images/kitfo.jpg" alt="kitfo" />
-            <h3>ክትፎ / Kitfo</h3>
-            <p class="detail">
-              Top round beef, cayenne pepper, Clarified butter, garlic,
-              Ethiopian Spiced.
-            </p>
-            <p class="price">$100</p>
-          </div>
-
-          <div class="order-list">
-            <img src="./images/tibs.jpg" alt="tibs" />
-            <h3>ጥብስ / Tibs</h3>
-            <p class="detail">
-              Beef, Hybrid stir fry, stew, bread or injera, Clarified butter,
-              Ethiopian Spiced.
-            </p>
-            <p class="price">$100</p>
-          </div>
-
-          <div class="order-list nd">
-            <img src="./images/ham.jpg" alt="Hamburger" />
-            <h3>Hamburger</h3>
-            <p class="detail">
-              Saltine crackers, worcestershire sauce, ground chuck, milk, egg,
-              corn syrup.
-            </p>
-            <p class="price">$100</p>
-          </div>
-
-          <div class="order-list nd">
-            <img src="./images/piz.jpg" alt="Pizza" />
-            <h3>Pizza</h3>
-            <p class="detail">
-              Ricotta cheese, tomato sauce, fresh basil pesto, cornmeal, redstar
-              platinum.
-            </p>
-            <p class="price">$100</p>
-          </div>
-
-          <div class="order-list nd">
-            <img src="./images/shwar.jpg" alt="Shawarma" />
-            <h3>Shawarma</h3>
-            <p class="detail">
-              Pita bread, chicken thigh fillets, smoked paprika, lettuce, red
-              pepper flakes, olive oil.
-            </p>
-            <p class="price">$100</p>
-          </div>
+      
+       <!--star order page-->
+       <div class="container">
+        <h2 id="order">Order...</h2>
+        <div class="search">
+          <input type="text" id="search-bar" placeholder="...">
+          <button id="search-btn" onclick="searchFoodItems()">Search</button>
         </div>
-        <center><a href="Order.html" class="or-btn">Order Now</a></center>
-      </div>
+        <div class="options">
+          <button class = "ord-btn"onclick="showFastingFoods()">Fasting Foods</button>
+          <button class="ord-btn" onclick="showNonFastingFoods()">Non-Fasting Foods</button>
+        </div>
+
+        <div class="food-items" id="food-items">
+          <!-- Food items will be displayed here -->
+        </div>
 
       <!-- End of the order page-->
 
@@ -179,6 +127,23 @@
       <input type="submit" value="SEND" class="inp sen" onclick="valid()" >
     </form>
   </div>
+
+  <section class="reservation">
+    <h2>Make a Reservation</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
       
 
       <!-- Start of contact-->
@@ -249,7 +214,7 @@
         </ul>
       </div>
     </footer>
-    
+    <script src="script.js"></script>
   </body>
 </html>
 
