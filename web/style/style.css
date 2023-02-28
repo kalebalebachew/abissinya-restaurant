@@ -11,7 +11,11 @@ body {
 }
 body {
   
+<<<<<<< Updated upstream
   background-color: #ffffff;
+=======
+  background-color: #fff;
+>>>>>>> Stashed changes
   width: 100%;
   overflow-x: hidden;
   max-width: 100%;
@@ -143,50 +147,88 @@ nav a:hover {
 
 /*make reservation*/
 .reservation {
+  width: 100%;
   margin-top: 50px;
-  display:grid;
-  }
+  margin-top:5%;
+  margin-bottom: 5%;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   
-  .reservation h2 {
+}
+
+.reservation h2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-size: 36px;
   margin-bottom: 20px;
-  }
-  
-  form {
+  text-align: center;
+}
+
+form {
+  inset: 4px;
+  background: #fff;
+  padding: 5% 5%;
+  border-radius: 8px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  }
-  
-  label {
+  max-width: 450px;
+  position: relative;
+  top: 50%;
+  left: 25%;
+ margin-bottom: 8%;
+}
+
+label {
   margin-bottom: 10px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="time"] {
+  color: #181717;
+  font-family: 'Space Mono', monospace;
+}
+
+input, select{
   padding: 10px;
   margin-bottom: 20px;
-  border: none;
+  border: 1px solid #333;
   border-radius: 5px;
-  margin-top: 0;
-  }
-  
-  button[type="submit"] {
+  box-shadow: 1px #333;
+  background-color: #fff;
+}
+button[type="submit"] {
   padding: 10px;
-  background-color: #573a12;
-  color: #333;
+  background-color: #333;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-  background-color: #444;
-  color:#ff9950;
-  }
+  width:100px;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+  color:#e4b56f;
+}
+
+.form-side {
+  display: inline-block;
+  width: 50%;
+  font-size: 19px;
+  color: #1d1d1db9;
+  margin-right: 0;
+}
+.image-side {
+  display: inline-block;
+  width: 40%;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: 20px;
+}
+.image-side img {
+  width: 0%;
+  border-radius: 20px;
+}
+
+/* end of reservation*/
+
 /* end of reservation*/
 
 /*contact*/
@@ -335,6 +377,12 @@ nav a:hover {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 20px;
+  width: 100%;
+  margin-top: 50px;
+  margin-top:5%;
+  margin-bottom: 5%;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .ord-form .inp{
   text-align: center;
@@ -345,17 +393,13 @@ nav a:hover {
   height: 50px;
   border-radius: 10px;
 }
-.ord-form .btn-send{
-  display: block;
-}
-.ord-form option{
-  background-color:#ffcf87;
-}
+
+
 .ord-form .sen{
   position: relative;
   background-color: #000000;
   color: #ffcf87;
-  left: 20%;
+  width: 100px;
 }
 .ord-form .sen:hover{
   background-color:#807c78;
@@ -364,18 +408,15 @@ nav a:hover {
 .ord-form .cal{
   background-color: #000000;
   color: #ffcf87;
+  width: 150px;
 }
 .ord-form .cal:hover{
   background-color:#807c78;
   color: #f7e9d4;
 }
-.hidden {
-    display: none;}
+
 #menu {
-	position: relative;
-  
-  
-  
+	position: relative; 
 }
 #menu::before {
 	content: '';
@@ -424,13 +465,8 @@ nav a:hover {
 	background: transparent;
 	width: 100%;
 	overflow: hidden;
-	/* left: -330.5px; */
-	/* position: relative; */
-	/* display: flex; */
-	/* justify-content: space-between; */
 }
 #menu .moved-cards .cards-container {
-	/* min-width: 100%; */
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -447,7 +483,6 @@ nav a:hover {
 	min-width: 32%;
 	display: flex;
 	flex-direction: column;
-	/* width: 350px; */
 }
 #menu .all-content .slider .moved-cards .card {
 	margin-right: 20px;
@@ -476,13 +511,9 @@ nav a:hover {
 	height: 70px;
 	line-height: 70px;
 	text-align: center;
-	/*font-family: var(--main-font);
-    */
 	font-size: 2em;
 	font-weight: 400;
 	background-color: #ffffff;
-	/*margin-bottom: var(--inner-margin-bottom);
-    */
 	box-shadow: 0 0 1px 7px rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
 	-webkit-border-radius: 50%;

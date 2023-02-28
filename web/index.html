@@ -12,7 +12,12 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
 		/>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.vox-cdn.com/thumbor/JARizzPtVGh1cX7s7YG_ZEyobgU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19835445/Mama_Desta__updated_.jpg" />
   </head>
+
 
 
   <body>
@@ -30,7 +35,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#order">Order</a></li>
-            <li><a href="#Reservation">Reservation</a></li>
+            <li><a href="#reservation">Reservation</a></li>
             <li><a href="#cont">Contact</a></li>
           </ul>
         </nav>
@@ -62,8 +67,11 @@
           <img src="" alt="" class="abt-img" />
         </div>
         </div>
+<<<<<<< Updated upstream
        
       </div>
+=======
+>>>>>>> Stashed changes
 
         <section id="menu">
           <div class="container">
@@ -178,6 +186,7 @@
             </div>
           </div>
         </section>
+
         <section id="menu2">
           <div class="container">
             <div class="all-content">
@@ -258,6 +267,10 @@
       
   <div class="ord-form">
     <h2 id="order">Order form</h2>
+    <div class="image-side">
+      <img src="https://c8.alamy.com/comp/DG7X5T/traditional-ethiopian-food-several-types-of-stew-and-meat-served-on-DG7X5T.jpg" alt="dorowot"/>
+    </div>
+    <div class="form-side">
     <form action="#">
       <input name="name" type="text" placeholder="Name" required class="inp"/>
       <input name="email" type="email" placeholder="E-Mail" required class="inp"/>
@@ -281,31 +294,36 @@
           <option value="buna">ቡና</option>     
       </select>
       <input name="itm_num" type="number" placeholder="Number of Item" required class="inp" id="it"min="0"/>
-      
       <input name="totpr" type="number" placeholder="Total Price" required class="inp" readonly id="tt"/>
       <input type="button" value="Calculate Price" class="inp cal" onclick="calc()">
       <input type="submit" value="SEND" class="inp sen" onclick="valid()" >
     </form>
+   </div>
+   
   
   </div>
 
-  <section class="reservation" id="Reservation">
-    <h2>Make a Reservation</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required>
-      <label for="date">Date:</label>
-      <input type="date" id="date" name="date" required>
-      <label for="time">Time:</label>
-      <input type="time" id="time" name="time" required>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-      
+      <section class="reservation" id="reservation">
+        <h2>Make a Reservation</h2>
+        <div class="form-side">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required />
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="image-side">
+          <img src="images/mahberawi.jpg" alt="dorowot"/>
+        </div>
+      </section>
 
       <!-- Start of contact-->
       <div id="contact">
