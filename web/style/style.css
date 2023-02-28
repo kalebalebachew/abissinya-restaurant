@@ -11,7 +11,7 @@ body {
 }
 body {
   
-  background-color: #ffcf87;
+  background-color: #ffffff;
   width: 100%;
   overflow-x: hidden;
   max-width: 100%;
@@ -79,9 +79,10 @@ nav a:hover {
 }
 .front_pg .btn-order {
   width: 2px;
-  border-width: 2em;
-  background-color: #ffb03b;
+  border-width: 4em;
+  background-color: #000000;
   height: 1%;
+  border:none;
   border-radius: 20px;
   color: #e6e5de;
   font-weight: 500;
@@ -112,7 +113,6 @@ nav a:hover {
   font-weight: 900;
   text-transform: uppercase;
 }
-
 .text_side {
   display: inline-block;
   width: 50%;
